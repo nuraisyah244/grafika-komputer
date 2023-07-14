@@ -1,0 +1,15 @@
+
+PenroseSnowflakeLSystem ps;
+
+void setup() {
+  size(640, 360);
+  stroke(255);
+  noFill();
+  ps = new PenroseSnowflakeLSystem();
+  ps.simulate(4);
+}
+
+void draw() {
+  background(139,5,0);
+  ps.render();
+}
